@@ -1,7 +1,8 @@
 ---
 import Item from "./item.astro"
+const posts = [{ title : "my life"}, { title : "my life 2"}, { title : "my life 3"}]
 ---
 
 <ul>
-  <Item />
+  <Item posts={posts} />
 </ul>

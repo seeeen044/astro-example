@@ -1,6 +1,6 @@
 ---
-const blog = [{ title: "my life 1"}, { title: "my life 2"}, { title: "my life 3"}]
+const {posts} = Astro.props
 ---
 <h1>blog</h1>
 <!--jsx-->
-{blog.map(b => <li><h3>{b.title}</h3></li>)}
+{posts.map(post => <li><h3>{post.title}</h3></li>)}
