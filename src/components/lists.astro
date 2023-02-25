@@ -1,7 +1,9 @@
 ---
+import Item from "./item.astro"
 const Ul = "ul";
 ---
 
 <Ul>
+  <slot name="image" />
   <slot name="item"/>
 </Ul>
