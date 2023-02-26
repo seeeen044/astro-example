@@ -3,4 +3,4 @@ const {posts} = Astro.props
 ---
 <h1>blog</h1>
 <!--jsx-->
-{posts.map((post) => <li><h3>{post.title}</h3></li>)}
+{posts.map((post, i) => <li class={i === 0 ? "first" ""}><h3>{post.title}</h3></li><a href="/page">...more</a>)}
